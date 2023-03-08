@@ -1,6 +1,7 @@
 import dotenv from 'dotenv'
+import IProvider from '../interfaces/providers/IProvider'
 
-class DotenvProvider {
+class DotenvProvider implements IProvider {
   public init(): void {
     dotenv.config()
   }

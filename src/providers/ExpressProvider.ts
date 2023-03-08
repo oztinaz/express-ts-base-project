@@ -1,7 +1,8 @@
 import express, { Application } from 'express'
+import IProvider from '../interfaces/providers/IProvider'
 import apiRouter from '../routes/Api'
 
-class ExpressProvider {
+class ExpressProvider implements IProvider {
   private express: Application
 
   constructor() {
